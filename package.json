@@ -1,0 +1,9 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "nodejs-api",
+  "main": "index.js",
+  "repository": "https://github.com/lfnjunior/api-node",
+  "author": "lfnjunior",
+  "license": "MIT"
+}
