@@ -1,8 +1,8 @@
 module.exports = {
   dialect: 'postgres',
-  host: '',
+  host: '35.227.141.247',
   username: 'postgres',
-  password: '',
+  password: 'm151900*0000',
   database: 'db_barber',
   define: {
     timestamps: true,
