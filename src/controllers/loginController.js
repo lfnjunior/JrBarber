@@ -6,7 +6,10 @@ class LoginController {
   async login(req, res) {
     const { email, password } = req.body;
 
-    const user = await User.findOne({ where: { email } });
+    const user = await User.findOne({
+      where: { email },
+      attributes: ['id', 'name', 'email', 'password_hash'],
+    });
 
     if (!user) {
       return res.status(401).json({
