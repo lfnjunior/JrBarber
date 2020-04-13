@@ -8,6 +8,8 @@ import loginController from './controllers/loginController';
 import ProviderController from './controllers/providerController';
 import AppointmentController from './controllers/appointmentContoller';
 import AppointmentValidator from './validators/appointmentValidator';
+import ScheduleController from './controllers/scheduleController';
+import NotificationController from './controllers/notificationController';
 
 import authentication from './middlewares/auth';
 
@@ -38,5 +40,10 @@ routes.get('/appointment/:id', AppointmentController.search);
 routes.get('/appointments', AppointmentController.list);
 routes.put('/appointment', AppointmentController.update);
 routes.delete('/appointment/:id', AppointmentController.delete);
+
+routes.get('/schedule', ScheduleController.search);
+
+routes.get('/notifications', NotificationController.search);
+routes.put('/notification/:id', NotificationController.update);
 
 export default routes;
